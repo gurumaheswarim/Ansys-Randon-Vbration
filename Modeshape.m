@@ -1,0 +1,14 @@
+y=0:0.001:0.51;
+Modeshape3=(-0.2672)*(y/0.51).^2+0.7914*(y/0.51).^3-0.5498*(y/0.51).^4;
+Modeshape1=0.9955*(y/0.51).^2-0.0765*(y/0.51).^3-0.0550*(y/0.51).^4;
+Modeshape2=-0.5173*(y/0.51).^2+0.8279*(y/0.51).^3-0.2166*(y/0.51).^4;
+figure;
+subplot(3,1,1);
+plot(y,Modeshape1);
+title('Subplot 1: Mode1');
+subplot(3,1,2);
+plot(y,Modeshape2);
+title('Subplot 2: Mode2');
+subplot(3,1,3);
+plot(y,Modeshape3);
+title('Subplot 2: Mode2');
